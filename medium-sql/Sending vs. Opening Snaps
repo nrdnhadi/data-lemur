@@ -13,3 +13,4 @@ JOIN age_breakdown AS age
 WHERE
   ac.activity_type IN ('send', 'open')
 GROUP BY age_bucket
+;
