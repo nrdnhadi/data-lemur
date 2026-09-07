@@ -1,0 +1,9 @@
+SELECT 
+  candidate_id
+FROM 
+  candidates
+WHERE
+  LOWER(skill) IN ('python', 'tableau', 'postgresql')
+GROUP BY candidate_id
+HAVING COUNT(skill) = 3
+  ;
